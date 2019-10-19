@@ -1,0 +1,10 @@
+Step 1: Check if pip for python2 is installed. If not
+	sudo apt-get install python-pip
+Step 2:  Install telepot package for python2
+	sudo pip install telepot
+Step 3: Read telegrambot.py using
+	nano telegrambot.py
+Step 4: Insert the api token in place of 'Bot Token' in the telegrambot.py
+	 bot = telepot.Bot('Bot Token') 
+Step 5: Run the code with
+	python2 telegrambot.py
