@@ -1,3 +1,5 @@
+#coder :- Salman Faris
+
 import sys
 import time
 import telepot
@@ -13,7 +15,7 @@ def off(pin):
 # to use Raspberry Pi board pin numbers
 GPIO.setmode(GPIO.BOARD)
 # set up GPIO output channel
-GPIO.setup(4, GPIO.OUT)#pin number 7
+GPIO.setup(11, GPIO.OUT)
 
 def handle(msg):
     chat_id = msg['chat']['id']
@@ -22,9 +24,9 @@ def handle(msg):
     print('Got command: %s' % command)
 
     if command == 'on':
-       bot.sendMessage(chat_id, on(4))
+       bot.sendMessage(chat_id, on(11))
     elif command =='off':
-       bot.sendMessage(chat_id, off(4))
+       bot.sendMessage(chat_id, off(11))
 
 bot = telepot.Bot('Bot Token')
 bot.message_loop(handle)
