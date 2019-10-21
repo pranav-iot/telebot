@@ -1,5 +1,3 @@
-#coder :- Salman Faris
-
 import sys
 import time
 import telepot
